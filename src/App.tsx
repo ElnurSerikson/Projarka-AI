@@ -1,6 +1,6 @@
 import { useCallback, useRef, useState } from 'react'
 import type { Analysis } from './types'
-import { analyzeIdea } from './lib/mockEngine'
+import { analyzeIdea } from './lib/llm'
 import { IdeaInput } from './components/IdeaInput'
 import { LoadingSkeleton } from './components/LoadingSkeleton'
 import { ResultView } from './components/ResultView'

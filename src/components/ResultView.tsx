@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState, type ReactNode } from 'react'
 import type { Analysis, PivotResult } from '../types'
-import { pivotIdea } from '../lib/mockEngine'
+import { pivotIdea } from '../lib/llm'
 import { Stepper, type Step } from './Stepper'
 import { StepNav } from './StepNav'
 import { VerdictSection } from './VerdictSection'
