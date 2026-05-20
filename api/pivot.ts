@@ -9,7 +9,7 @@ const SYSTEM_PROMPT = `Ты — циничный, но точный разбор
 усилить слабую силу (push/pull/inertia), сузить до горящего сегмента, сменить покупателя/ЛПР,
 урезать до одного ценного действия и т.п. Каждый вариант — практичный и применимый завтра.
 
-Стиль: жёстко, по делу, на русском.
+Стиль: жёстко, по делу. ЯЗЫК: пиши СТРОГО на русском — никаких иностранных слов, латиницы (кроме терминов Push, Pull, Inertia, CRM, MVP, B2B), иероглифов или случайных символов. Сомневаешься в слове — бери простой русский синоним.
 
 Верни ТОЛЬКО валидный JSON (json) без markdown-обёртки, строго по схеме:
 { "variants": [ { "title": "краткий заголовок приёма", "text": "1-2 предложения: как именно докрутить" } ] }
@@ -69,7 +69,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       },
       body: JSON.stringify({
         model: MODEL,
-        temperature: 0.7,
+        temperature: 0.5,
         max_tokens: 1024,
         response_format: { type: 'json_object' },
         messages: [
