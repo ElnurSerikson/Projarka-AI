@@ -64,7 +64,7 @@ export default function App() {
           Прожарка идеи
         </h1>
         <p className="mt-2 text-lg text-muted-foreground">
-          Честный разбор твоей идеи: оценка, слабые места и как её докрутить
+          Честный разбор твоей идеи: оценка, слабые места и рекомендации от AI
         </p>
       </header>
 
